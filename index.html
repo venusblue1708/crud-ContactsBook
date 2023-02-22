@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="container">
+        <div class="auth_form">
+          <div class="field">
+            <span>Name:</span>
+            <input type="text" class="name-input" />
+            <span>Surname:</span>
+            <input type="text" class="surname-input" />
+            <span>Photo-url:</span>
+            <input type="url" class="photo-input" />
+            <span>Phone-number:</span>
+            <input type="number" class="number-input" />
+            <span>Email:</span>
+            <input type="email" class="email-input" />
+          </div>
+          <div class="btn">
+            <button class="save_btn">Save</button>
+          </div>
+        </div>
+        <div class="container">
+          <h2 class="title">Contacts</h2>
+          <ul class="list-group"></ul>
+        </div>
+      </div>
+    </div>
+    <!-- Modal start -->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content bg-secondary">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">
+              Contact Info
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <span>Name:</span>
+            <input type="text" class="form-control inp-name" />
+            <span>Surname:</span>
+            <input type="text" class="form-control inp-surname" />
+            <span>Photo-url:</span>
+            <input type="url" class="form-control inp-photo" />
+            <span>Phone-number:</span>
+            <input type="number" class="form-control inp-number" />
+            <span>Email:</span>
+            <input type="email" class="form-control inp-email" />
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-primary btnSave">
+              Save changes
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal end-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./main.js"></script>
+  </body>
+</html>

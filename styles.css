@@ -1,0 +1,110 @@
+body {
+  padding: 0;
+  margin: 0;
+  background-size: cover;
+  background-image: url(https://i.pinimg.com/736x/5f/c4/da/5fc4dad5172aca460805c6465f8e57cf.jpg);
+}
+.wrapper {
+  width: 100%;
+  height: 100%;
+}
+
+.container {
+  max-width: 960px;
+  width: 100%;
+  margin: auto;
+  padding: 1rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container:first-child {
+  text-align: center;
+}
+
+.auth_form {
+  display: inline-block;
+  margin: auto;
+  padding: 2rem;
+  background-color: transparent;
+  border-radius: 5px;
+  text-align: right;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+span {
+  margin-top: 4px;
+  color: rgb(237, 224, 199);
+}
+.field input {
+  border: 0;
+  border-radius: 5px;
+  padding: 6px;
+  margin-top: 5px;
+  color: rgb(39, 36, 32);
+  background-color: rgb(238, 169, 64);
+}
+
+.btn > button {
+  margin-top: 1rem;
+  padding: 10px;
+  color: rgb(248, 194, 233);
+  background-color: rgb(215, 35, 161);
+  border: 0;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 58px;
+}
+
+.btn > button:hover {
+  background-color: rgb(0, 195, 255);
+  transition: 0.3s;
+}
+
+.button {
+  display: flex;
+  flex-direction: column;
+}
+.delete_btn {
+  width: 60%;
+  height: 35px;
+  color: maroon;
+  background-color: transparent;
+  border: 1px solid;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-left: 33px;
+  margin-bottom: 15px;
+}
+
+.edit_btn {
+  width: 60%;
+  height: 35px;
+  color: midnightblue;
+  background-color: transparent;
+  border: 1px solid;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-left: 33px;
+  margin-bottom: 15px;
+}
+
+.delete_btn:hover {
+  background-color: rgb(177, 80, 45);
+  transition: 0.3s;
+}
+.edit_btn:hover {
+  background-color: rgb(4, 142, 142);
+  transition: 0.3s;
+}
+.title {
+  color: rgb(245, 157, 233);
+}
+.list-group {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around !important;
+}
